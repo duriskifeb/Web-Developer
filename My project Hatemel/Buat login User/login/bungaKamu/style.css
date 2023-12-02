@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+.flower {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    position: relative;
+    animation: bloom 3s infinite alternate;
+}
+
+.flower::before,
+.flower::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.flower::before {
+    top: -25px;
+    left: 0;
+}
+
+.flower::after {
+    top: 0;
+    left: -25px;
+}
+
+@keyframes bloom {
+    to {
+        transform: scale(1.2);
+    }
+}

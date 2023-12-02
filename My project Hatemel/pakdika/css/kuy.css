@@ -1,0 +1,13 @@
+h1 {
+    color: rgb(209, 136, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    font-variant: small-caps;
+    font-style: italic;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    
+}

@@ -1,0 +1,111 @@
+<ini penjelasan untuk font styling>
+-------o0  ------  0o--------------
+
+embed adalah gabung langsung dengan html tanpa menambah file baru
+
+inline adalah menaruh langsung didalam html di dalam bodynya di kurungnya
+
+external adalah di ambil dari file yang berbeda
+
+font css dan fungsi-fungsinya :
+
+font-family : mengatur jenis font yang diinginkan
+font family : arial, verdana, sans-serif
+
+font-size : mengatur ukuran font
+ukuran-ukuran dalam font size :
+1. px 
+2. %
+3. em 
+
+font-weight : mengatur ketebalan font
+ukuran-ukuran dalam font weight :
+1. lighter 
+2. normal 
+3. 100-900
+4. bold
+5. bolder 
+
+font-variant :mengubah font menjadi samll caps
+ukuran-ukuran dalam font variant :
+1. noraml 2. small caps 
+
+font-style : mengubah font menjadi cetak miring
+ukuran-ukuran dalam font style :
+1. normla 
+2. italic 
+3. oblique 
+
+line-height : mengatur spasi antar baris
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+<ini penjelasan untuk text styling>
+-------o0  ------  0o--------------
+
+color : memberi warna pada tulisan
+text-align  : mengatur format paragraf 
+text-indent : memberi identasi pada paragraf text 
+text-decoration : mengatur dekorasi pada text 
+text-transform : mengubah jenis huruf menjadi huruf besar, kecil, dan kapital.
+lettter-spacing : mengatur spasi antar huruf 
+word-spacing : mengatur spasi antar kata
+
+color : nama warna 
+
+hexadecimal : nama warna campuran atau bisa disebut gradasfa-inverse
+
+RGBA : campuran tiga warna 
+
+macam-macam text-align : 
+1. left/kiri
+2. right/kanan
+3. center/tengah
+4. justify/
+
+text-decoration macamnya :
+1. none 
+2. underline 
+3. overline 
+4. line-through 
+
+macam-macam text transform :
+1. none
+2. lowercase
+3. uppercase
+4. capitalize
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<ini penjelasan untuk text Background>
+-------o0  ------  0o--------------
+
+Background-color : mengatur warna pada background
+background-image : mengatur gambar yang akan digunakan pada background
+background-possition : mengatur posisi gambar pada background 
+background-repeat : mengatur jenis pengulangan gambar pada background
+
+macam-macam background-possition :
+
+1.top left 
+2. top center 
+3. top right 
+4. center left 
+5. center center 
+6. center right 
+7. bottom left 
+8. bottom center
+9. bottom right 
+10. x% y%
+11. x-pos y-pos 
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+<ini penjelasan untuk text pseudo class>
+-------o0  ------  0o--------------
+
+1. Link : style default pada sebuah link (a yang memiliki herf)
+2. hover : style ketika krusor mouse berada di atas sebuah link / elemen 
+3. active : style ketika sebuah link di klik (keadan aktif )
+4. visited : style ketika sebuah link sudah pernah dikunjungi sebelumnya (menggunakan browser yang sama)
