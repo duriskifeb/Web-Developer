@@ -1,0 +1,63 @@
+--> Display Layout <---
+------------------------------------------------------------------------------------------------------------------------------------------
+display macamnya ada 4 : 
+
+1. inline 
+macam-macam elemen inline :
+1. b 
+2. strong 
+3. i 
+4. em 
+5. a 
+6. span 
+7. sub 
+8. sup 
+9. button 
+10. input 
+11. label 
+12. select 
+13. teaxtera 
+---------------------------
+
+2. inline-block
+macam-macam elemen inline-block :
+
+3. block 
+macam-macam elemen inline-block :
+1. H1 -> H6 
+2. p
+3. ol
+4. ul 
+5. li 
+6. form 
+7. hr 
+8. div 
+
+4. none 
+manfaatnya untuk menghilangkan sebuah elemen
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+--> Display dan Oferflow <--
+
+width : px dan %
+height : in, cm, mm, pt, pc 
+
+macam-macam elemenya Oferflow :
+- visible : value default.
+- auto : menambahkan scroll pada elemen nya tersebut, kalu semisal jika content atau tulisanya kebanyakan maka akan separuh dan jika banyak maka dia menjadikan scrooll 
+- hidden :
+- scroll 
+
+
+--> Box Model / konsep. <--
+
+Css box model terdiri dari margin, border, padding, dan content.
+
+margin : area transparan di setiap kotak.
+padding : area transparan di dalam kotak (content dan border).
+border : batas disekeliling content dan padding 
+content : kontent sebenarnya didalam box, bisa berupa text atau gambar.
+
+
+margin 
