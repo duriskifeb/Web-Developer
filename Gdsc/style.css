@@ -1,0 +1,17 @@
+header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center
+}
+
+header p {
+    text-align: center;
+}
+
+ul li {
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline;
+    font-size: 25px;
+    font-style: inherit;
+    
+}

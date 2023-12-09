@@ -1,0 +1,21 @@
+Dom merip Html jadi di generate terus di terukan di Html 
+
+screen reader 
+
+Accesible web stater pack 
+
+- Semantic HTML 
+- ARIA (Accessible Rich Internet Aplication)
+- 
+
+kotak kosong ada 2 ada div dan span
+
+header 1 buat judul 
+
+respownsif web 
+
+freaksiom ukuran   
+
+media queryy
+
+ctrl + spasi buat nampilin apa yang ma d keluarkan.
