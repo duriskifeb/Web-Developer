@@ -1,17 +1,170 @@
-header h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center
+/* Reset beberapa default margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-header p {
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px 0;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  max-width: 100%;
+  background-color: #333;
+}
+
+section {
+  margin-bottom: 10px;
+}
+
+ul {
+  padding: 10px;
+  max-width: 70%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+/* Article */
+article {
+  border: 1px solid black;
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
+article p {
+  text-align: justify;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Sidebar */
+aside {
+  background-color: #333;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+aside ul {
+  max-width: 80%;
+  display: block;
+  padding: 0;
+  text-align: center;
+}
+
+aside li {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr)) repeat(1, minmax(0, 0.3fr));
+  border: 1px solid #ddd;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Header */
+  header {
+    padding: 15px 0;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Navigation */
+  nav {
+    background-color: #333;
+  }
+
+  ul {
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  /* Artikel */
+  article {
+    padding: 15px;
+  }
+
+  article img {
+    max-width: 100%;
+  }
+
+  article p {
+    font-size: 14px;
+  }
+
+  /* Sidebar */
+  aside {
+    padding: 15px;
+  }
+
+  aside ul {
+    display: block;
     text-align: center;
-}
+    font-size: 10px;
+  }
 
-ul li {
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: inline;
-    font-size: 25px;
-    font-style: inherit;
-    
+  h2 {
+    font-size: 20px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 5px;
+  }
+
+  #grid {
+    display: block;
+  }
 }
