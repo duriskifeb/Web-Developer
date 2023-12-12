@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Element Example</title>
+  <style>
+    /* Style untuk elemen dengan pseudo-element */
+    .pseudo-element {
+      position: relative;
+      width: 200px;
+      height: 100px;
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      line-height: 100px;
+      margin: 20px;
+      border-radius: 5px;
+    }
+
+    /* Menambahkan konten sebelum elemen menggunakan pseudo-element ::before */
+    .pseudo-element::before {
+      content: '🚀'; /* Konten simbol roket */
+      display: block;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Elemen dengan pseudo-element -->
+<div class="pseudo-element">Rocket Element</div>
+
+</body>
+</html>

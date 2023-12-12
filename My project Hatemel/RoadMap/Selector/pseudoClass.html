@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Class Example</title>
+  <style>
+    /* Style untuk elemen dengan pseudo-class */
+    .pseudo-element {
+      width: 200px;
+      height: 100px;
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      line-height: 100px;
+      margin: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Style saat kursor diarahkan ke atas elemen */
+    .pseudo-element:hover {
+      background-color: #2980b9;
+    }
+
+    /* Style saat elemen aktif (ditekan) */
+    .pseudo-element:active {
+      background-color: #1f618d;
+    }
+
+    /* Style saat elemen mendapatkan fokus */
+    .pseudo-element:focus {
+      outline: 2px solid #2ecc71;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Elemen dengan pseudo-class -->
+<div class="pseudo-element" tabindex="0">Muhammad Rizky Febriyanto</div>
+
+</body>
+</html>

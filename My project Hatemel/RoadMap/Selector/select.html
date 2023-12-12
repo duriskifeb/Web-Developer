@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Selectors Example</title>
+  <style>
+    /* Descendant Selector */
+    div p {
+      color: blue;
+    }
+
+    /* Child Selector */
+    ul > li {
+      list-style-type: square;
+    }
+
+    /* Adjacent Sibling Selector */
+    h2 + p {
+      font-style: italic;
+    }
+
+    /* General Sibling Selector */
+    h2 ~ p {
+      color: green;
+    }
+
+    /* Attribute Selector */
+    input[type="text"] {
+      border: 1px solid #ccc;
+    }
+
+    /* Pseudo-class and Pseudo-element */
+    li:nth-child(odd):hover {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Descendant Selector -->
+<div>
+  <p>This is a paragraph inside a div.</p>
+</div>
+
+<!-- Child Selector -->
+<ul>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ul>
+
+<!-- Adjacent Sibling Selector -->
+<h2>Heading 2</h2>
+<p>Paragraph immediately following Heading 2.</p>
+
+<!-- General Sibling Selector -->
+<h2>Heading 2</h2>
+<p>Paragraph 1.</p>
+<p>Paragraph 2.</p>
+<p>Paragraph 3.</p>
+
+<!-- Attribute Selector -->
+<input type="text" placeholder="Type something">
+
+<!-- Pseudo-class and Pseudo-element -->
+<ul>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+  <li>List item 4</li>
+</ul>
+
+</body>
+</html>
