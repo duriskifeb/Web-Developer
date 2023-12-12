@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Saya</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #3498db;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Biodata Saya</h1>
+    </header>
+
+    <section>
+        <h2>Data Pribadi</h2>
+        <p><strong>Nama:</strong> John Doe</p>
+        <p><strong>Alamat:</strong> Jl. Contoh No. 123, Kota Contoh</p>
+        <p><strong>Email:</strong> john.doe@example.com</p>
+        <p><strong>Telepon:</strong> 0812-3456-7890</p>
+    </section>
+
+    <section>
+        <h2>Pendidikan</h2>
+        <p><strong>SMA:</strong> SMA Contoh, Kota Contoh, Tahun Lulus 20XX</p>
+        <p><strong>Universitas:</strong> Universitas Contoh, Jurusan XYZ, Tahun Lulus 20XX</p>
+    </section>
+
+    <section>
+        <h2>Pengalaman Kerja</h2>
+        <p><strong>Perusahaan ABC</strong> - Posisi XYZ - Tahun Mulai-Tahun Selesai</p>
+        <p><strong>Perusahaan DEF</strong> - Posisi ABC - Tahun Mulai-Tahun Selesai</p>
+    </section>
+
+    <footer>
+        <p>Terima kasih telah mengunjungi halaman biodata saya.</p>
+    </footer>
+
+</body>
+</html>
