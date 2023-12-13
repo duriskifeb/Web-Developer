@@ -60,4 +60,27 @@ border : batas disekeliling content dan padding
 content : kontent sebenarnya didalam box, bisa berupa text atau gambar.
 
 
-margin 
+margin : area transparat di sekitar kotak (diluar border). 
+
+padding : area transparan di dalam kotak(antara kontent dan border). 
+
+border : batas sekeliling content dan padding 
+
+content : konten aslinya didalam box, dan berupa tulisan artikel, gambar atau link. 
+
+
+-------------------------------------------------------------------------
+padding|
+````````
+
+padding gunanya untuk memberikan jarak di sekitarnya.!
+padding tidak bisa nilai negatif dan tidak punya nilai auto.
+
+border cara penulisanya : {border : width style color; }
+
+macam - macam style border : 
+1.solid = sempurna
+2. dotted = renggang kecil titik
+3. dashed = renggang besar 
+4. double = rangkep jadi dua 
+

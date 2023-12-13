@@ -1,0 +1,23 @@
+body {
+    font: 16px/20px arial, sans-serif;
+    background-color: #3333;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.header {
+    padding: 20px;
+}
+
+.header .judul {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.header ul li {
+    display: inline-block;
+}

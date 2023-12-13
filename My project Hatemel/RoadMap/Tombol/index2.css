@@ -1,0 +1,9 @@
+.my-button {
+  background: blue;
+  justify-content: center;
+  
+}
+
+button[onclick] {
+  background: rgb(233, 7, 158);
+}
