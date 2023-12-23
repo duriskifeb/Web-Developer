@@ -20,4 +20,27 @@ body {
 
 .header ul li {
     display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
 }
+
+.header a {
+    text-decoration: none;
+    color: sandybrown;
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color: red;
+    color: pink;
+}
+
+.menn {
+    height: 650px;
+    background-image: url(riski.jpeg.JPG);
+    background-size: cover;
+    background-position: 0 -80px;
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid orangered;
+}
+
