@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    #game-board {
+      position: relative;
+      width: 1000px; /* Lebar arena ditingkatkan */
+      height: 500px;
+      border: 1px solid #000;
+      overflow: hidden;
+    }
+
+    .snake {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #00f;
+      border-radius: 50%;
+    }
+
+    .food {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #f00;
+      border-radius: 50%;
+    }
+
+    #score {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+    }
+  </style>
+  <title>Snake Game</title>
+</head>
+<body>
+  <div id="game-board">
+    <div id="score">Score: 0</div>
+  </div>
+  <script>
+    const gameBoard = document.getElementById('game-board');
+    const scoreElement = document.getElementById('score');
+
+    let snake = [{ x: 10, y: 10 }];
+    let food = { x: 5, y: 5 };
+    let direction = 'right';
+    let score = 0;
+
+    function drawSnake() {
+      const snakeElements = document.querySelectorAll('.snake');
+      snakeElements.forEach(element => element.remove());
+
+      snake.forEach(segment => {
+        const snakeSegment = document.createElement('div');
+        snakeSegment.className = 'snake';
+        snakeSegment.style.left = `${segment.x * 20}px`;
+        snakeSegment.style.top = `${segment.y * 20}px`;
+        gameBoard.appendChild(snakeSegment);
+      });
+    }
+
+    function drawFood() {
+      const foodElement = document.querySelector('.food');
+      if (foodElement) {
+        foodElement.remove();
+      }
+
+      const newFood = document.createElement('div');
+      newFood.className = 'food';
+      newFood.style.left = `${food.x * 20}px`;
+      newFood.style.top = `${food.y * 20}px`;
+      gameBoard.appendChild(newFood);
+    }
+
+    function updateScore() {
+      scoreElement.textContent = `Score: ${score}`;
+    }
+
+    function updateGame() {
+      drawSnake();
+      drawFood();
+      updateScore();
+    }
+
+    function moveSnake() {
+      const head = { ...snake[0] };
+
+      switch (direction) {
+        case 'up':
+          head.y -= 1;
+          break;
+        case 'down':
+          head.y += 1;
+          break;
+        case 'left':
+          head.x -= 1;
+          break;
+        case 'right':
+          head.x += 1;
+          break;
+      }
+
+      // Batasi agar ular tidak keluar dari kotak
+      head.x = (head.x + 20) % 20; /* Lebar arena ditingkatkan */
+      head.y = (head.y + 15) % 15;
+
+      snake.unshift(head);
+
+      if (head.x === food.x && head.y === food.y) {
+        // Snake ate the food
+        food = { x: Math.floor(Math.random() * 20), y: Math.floor(Math.random() * 15) };
+        score += 10;
+      } else {
+        // Remove the last segment if no food is eaten
+        snake.pop();
+      }
+    }
+
+    function handleKeyPress(event) {
+      switch (event.key) {
+        case 'ArrowUp':
+          direction = 'up';
+          break;
+        case 'ArrowDown':
+          direction = 'down';
+          break;
+        case 'ArrowLeft':
+          direction = 'left';
+          break;
+        case 'ArrowRight':
+          direction = 'right';
+          break;
+      }
+    }
+
+    function gameLoop() {
+      moveSnake();
+      updateGame();
+    }
+
+    drawSnake();
+    drawFood();
+    updateScore();
+    setInterval(gameLoop, 200);
+
+    document.addEventListener('keydown', handleKeyPress);
+  </script>
+</body>
+</html>

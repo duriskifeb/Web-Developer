@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .animated-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      animation: blink 1s infinite;
+    }
+
+    .paused {
+      animation-play-state: paused;
+    }
+
+    @keyframes blink {
+      0%, 100% {
+        color: #000;
+        background-color: #fff;
+      }
+      50% {
+        color: #fff;
+        background-color: #000;
+      }
+    }
+  </style>
+  <title>Simple Animation</title>
+</head>
+<body>
+  <button class="animated-button" onclick="toggleAnimation()">Click Me</button>
+  <script>
+    function toggleAnimation() {
+      const button = document.querySelector('.animated-button');
+      button.classList.toggle('paused');
+    }
+  </script>
+</body>
+</html>
