@@ -1,6 +1,7 @@
 body {
     font: 16px/20px arial, sans-serif;
     background-color: #3333;
+    background-image: url(oriental-tiles.png);
 }
 
 .container {
@@ -9,6 +10,7 @@ body {
     background-color: #fff;
 }
 
+
 .header {
     padding: 20px;
     padding-bottom: 10px;
@@ -16,7 +18,9 @@ body {
 
 .header .judul {
     font-size: 30px;
-    font-weight: 500;
+    font-style: italic;
+    font-weight: bolder;
+    margin-left: 12px;
 }
 
 .header ul li {
@@ -61,7 +65,7 @@ content h2 {
 }
 
 .content .penulis {
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 5px;
 }
 .content p {
